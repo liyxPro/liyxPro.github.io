@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/07/My-first-Blog/">My first Blog</a>
+      <a class="article-title" href="/2017/03/07/My-first-Blog/">Hexo配置</a>
     </h1>
   
 
@@ -83,11 +83,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="Hexo的配置（windows）"><a href="#Hexo的配置（windows）" class="headerlink" title="Hexo的配置（windows）"></a>Hexo的配置（windows）</h2><p>无意中看到了一篇关于在GitHub上部署自己的静态博客的文章，阅读完毕后很想尝试一下。<br>于是开始了长达<strong>一天半</strong>的征程.<br>如今成功部署，所以来分享一下这其中自己踩过的坑和解决办法。</p>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>首先我们要有node环境、npm包管理、Git、Github</p>
+<p>安装<a href="https://nodejs.org/en/" target="_blank" rel="external">nodejs</a></p>
+<p>鉴于npm是海外的，大陆访问略有艰辛，所以一开始我就切换了<a href="https://npm.taobao.org/" target="_blank" rel="external">淘宝NPM镜像</a>，当然大家可以选择使用VPN，这里就不做过多介绍了</p>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="external">Git</a>安装<br>可以参考这个教程<br><a href="http://www.runoob.com/git/git-install-setup.html" target="_blank" rel="external">http://www.runoob.com/git/git-install-setup.html</a></p>
+<h4 id="废话一些"><a href="#废话一些" class="headerlink" title="废话一些"></a>废话一些</h4><p>要准备的东西有点多···我发现写起来好困难<br>那就一点一点来吧，安装的过程中参考了很多前人的经验。不过因为一个人出现的问题总归只有那么几个，所以我在配置的过程中也出现了一些，现有教程中找了半天也没有解决方案的问题。最后在搜索引擎的帮助下，还是找到了相关的内容，最后得以解决。</p>
+<h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>我这里只写我觉得重要的部分了</p>
+<p>首先需要在GitHub上创建一个Repository</p>
+<p>需要和自己的用户名对应</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">用户名.github.io</div></pre></td></tr></table></figure>
+<p>eg：<a href="https://github.com/liyxPro" target="_blank" rel="external">https://github.com/liyxPro</a></p>
+<p>我创建的仓库名<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">liyxPro.github.io</div></pre></td></tr></table></figure></p>
+<p>接下来需要配置SSH Key </p>
+<p>…未完待续</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/07/My-first-Blog/" data-id="cizzjeo7z0000rgn3vours9ru" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/07/My-first-Blog/" data-id="cizzjf9xy0000a4n389qwhg3p" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -132,7 +146,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/07/hello-world/" data-id="cizzjeo8s0001rgn38odxwd0g" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/07/hello-world/" data-id="cizzjf9y80001a4n3si9ug0ui" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -157,7 +171,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
     </div>
@@ -167,12 +181,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/03/07/My-first-Blog/">My first Blog</a>
+            <a href="/2017/03/07/My-first-Blog/">Hexo配置</a>
           </li>
         
           <li>
