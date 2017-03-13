@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,42 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-First-Blog" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/13/First-Blog/" class="article-date">
+  <time datetime="2017-03-13T02:32:49.000Z" itemprop="datePublished">2017-03-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/13/First-Blog/">First Blog</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/03/13/First-Blog/" data-id="cj07ir4on0001i0n3detmljp2" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-My-first-Blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -132,18 +168,25 @@
 <h4 id="git-bash内测试"><a href="#git-bash内测试" class="headerlink" title="git bash内测试"></a>git bash内测试</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div></pre></td></tr></table></figure>
 <p>最后看到这句话，就成功了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi liyxPro! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</div></pre></td></tr></table></figure></p>
 <h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure>
-<p>在git bash 内 输入一下命令</p>
-<p>进入D: 盘</p>
-<p>创建一个名为Hexo的文件夹 </p>
-<p>进入Hexo文件夹内</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cd d: </div><div class="line">$ mkdir Hexo</div><div class="line">$ cd Hexo</div></pre></td></tr></table></figure>
+<p>在git bash内输入以下命令</p>
+<p>进入D盘，创建一个名为Hexo的文件夹 ，进入Hexo文件夹内<br>创建一个名为blog的文件夹并进入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cd d: </div><div class="line">$ mkdir Hexo &amp; cd Hexo</div><div class="line">$ mkdir blog &amp; cd blog</div></pre></td></tr></table></figure>
 <p>在当前目录内执行 初始化项目命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div><div class="line">[info] Copying data</div><div class="line">[info] You are almost done! Don&apos;t forget to run `npm install` before you start b</div><div class="line">logging with Hexo!</div></pre></td></tr></table></figure>
+<p>hexo会在当前项目目录内构建所需内容</p>
+<p>接下来在当前目录内运行以下命令会安装 node_modules<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
+<h4 id="启动项目服务"><a href="#启动项目服务" class="headerlink" title="启动项目服务"></a>启动项目服务</h4><h6 id="本地启动流程："><a href="#本地启动流程：" class="headerlink" title="本地启动流程："></a>本地启动流程：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
+<p>出现以上内容说明Hexo Server已经启动了</p>
+<p>在浏览器中打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<p>你可以按Ctrl+C 停止Server。</p>
+<h6 id="创建新的blog："><a href="#创建新的blog：" class="headerlink" title="创建新的blog："></a>创建新的blog：</h6><p>打开git bash 进项目目录内 <strong>【D:/Hexo/blog】</strong><br>执行以下命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new &quot;First Blog&quot;</div><div class="line">INFO  Created: D:\Hexo\blog\source\_posts\First-Blog.md</div></pre></td></tr></table></figure>
+<p>创建成功后</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/07/My-first-Blog/" data-id="cj03t768t0001uwn373a8orlo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/07/My-first-Blog/" data-id="cj07ir4oi0000i0n368japtis" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -188,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/07/hello-world/" data-id="cj03t768n0000uwn31n2u8t5w" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/07/hello-world/" data-id="cj07ir4or0002i0n3bpv7whp1" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -223,9 +266,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/13/First-Blog/">First Blog</a>
+          </li>
         
           <li>
             <a href="/2017/03/07/My-first-Blog/">Hexo配置</a>
@@ -248,7 +295,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
