@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://yoursite.com/../../images/cd.png">
 <meta property="og:image" content="http://yoursite.com/../../images/sshkeyset.jpg">
 <meta property="og:image" content="http://yoursite.com/../../images/inputkey.jpg">
-<meta property="og:updated_time" content="2017-03-13T02:57:51.239Z">
+<meta property="og:updated_time" content="2017-03-13T12:52:00.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo配置">
 <meta name="twitter:description" content="Hexo的配置（windows）无意中看到了一篇关于在GitHub上部署自己的静态博客的文章，阅读完毕后很想尝试一下。于是开始了长达一天半的征程.如今成功部署，所以来分享一下这其中自己踩过的坑和解决办法。
@@ -67,9 +67,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -159,15 +159,31 @@
 <h4 id="启动项目服务"><a href="#启动项目服务" class="headerlink" title="启动项目服务"></a>启动项目服务</h4><h6 id="本地启动流程："><a href="#本地启动流程：" class="headerlink" title="本地启动流程："></a>本地启动流程：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
 <p>出现以上内容说明Hexo Server已经启动了</p>
 <p>在浏览器中打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
-<p>你可以按Ctrl+C 停止Server。</p>
+<p>ctrl+c 停止server</p>
 <h6 id="创建新的blog："><a href="#创建新的blog：" class="headerlink" title="创建新的blog："></a>创建新的blog：</h6><p>打开git bash 进项目目录内 <strong>【D:/Hexo/blog】</strong><br>执行以下命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo new &quot;First Blog&quot;</div><div class="line">INFO  Created: D:\Hexo\blog\source\_posts\First-Blog.md</div></pre></td></tr></table></figure>
-<p>创建成功后</p>
+<p>创建成功后 可用Markdown编辑器工具帮助编辑blog内容</p>
+<h6 id="生成静态网页："><a href="#生成静态网页：" class="headerlink" title="生成静态网页："></a>生成静态网页：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>成功后会在项目下【D:\Hexo\blog\public\】生成对应的HTML，CSS文件内容</p>
+<h6 id="部署Blog至GitHub"><a href="#部署Blog至GitHub" class="headerlink" title="部署Blog至GitHub"></a>部署Blog至GitHub</h6><p>部署前需配置好_config.yml</p>
+<p>文件地址：<br>D:\Hexo\blog_config.yml 找到以下内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: http://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type:</div></pre></td></tr></table></figure>
+<p>修改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: git@github.com:liyxPro/liyxPro.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p><strong>repository：</strong></p>
+<p>必须是SSH形式的url（git@github.com:liyxPro/liyxPro.github.io.git），而不能是HTTPS形式的url（<a href="https://github.com/liyxpro/liyxpro.github.io.git）" target="_blank" rel="external">https://github.com/liyxpro/liyxpro.github.io.git）</a><br>执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line">···</div><div class="line">···</div><div class="line">···</div><div class="line">INFO  Deploy done: git</div></pre></td></tr></table></figure></p>
+<p>最后有这句话  Deploy done: git 代表部署成功</p>
+<p>现在可以通过访问<br><a href="https://liyxpro.github.io/" target="_blank" rel="external">https://liyxpro.github.io/</a> 浏览部署成功的博客了</p>
+<h4 id="报错处理"><a href="#报错处理" class="headerlink" title="报错处理"></a>报错处理</h4><p>1.执行 hexo deploy 后,出现 error deployer not found:git 的错误</p>
+<p>首先要确认 Hexo的版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ hexo -v</div><div class="line">hexo: 3.2.2</div><div class="line">hexo-cli: 1.0.2</div><div class="line">os: Windows_NT 6.1.7601 win32 x64</div><div class="line">http_parser: 2.7.0</div><div class="line">node: 6.10.0</div><div class="line">v8: 5.1.281.93</div><div class="line">uv: 1.9.1</div><div class="line">zlib: 1.2.8</div><div class="line">ares: 1.10.1-DEV</div><div class="line">icu: 58.2</div><div class="line">modules: 48</div><div class="line">openssl: 1.0.2k</div></pre></td></tr></table></figure>
+<p>Hexo 更新到3.0之后，deploy的type 的github需要改成git</p>
+<p>如果查看版本之后，发现其版本不是3以上，可以通过以下的命令操作进行处理</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/07/My-first-Blog/" data-id="cj07ir4oi0000i0n368japtis" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/03/07/My-first-Blog/" data-id="cj083zaeh00001gn3dkjn3ky2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -177,7 +193,7 @@
 <nav id="article-nav">
   
     <a href="/2017/03/13/First-Blog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Récent</strong>
+      <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
           First Blog
@@ -187,7 +203,7 @@
   
   
     <a href="/2017/03/07/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -220,7 +236,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -249,7 +265,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
