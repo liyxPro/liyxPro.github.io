@@ -39,7 +39,7 @@
 				<h1 class="site-name"><a href="/" title="HadiBJ">HadiBJ</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -52,7 +52,7 @@
 					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -76,7 +76,7 @@
     </p>
   <p class="article-time">
     <time datetime="2017-03-07T08:19:33.000Z" itemprop="datePublished">2017-03-07</time>
-    Updated:<time datetime="2017-03-13T12:52:00.418Z" itemprop="dateModified">2017-03-13</time>
+    更新日期:<time datetime="2017-03-15T06:49:09.743Z" itemprop="dateModified">2017-03-15</time>
     
   </p>
 </header>
@@ -84,7 +84,7 @@
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo的配置（windows）"><span class="toc-number">1.</span> <span class="toc-text">Hexo的配置（windows）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-number">1.1.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用nrm快速切换NPM源"><span class="toc-number">1.1.1.</span> <span class="toc-text">使用nrm快速切换NPM源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#废话一些"><span class="toc-number">1.1.2.</span> <span class="toc-text">废话一些</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置环境"><span class="toc-number">1.2.</span> <span class="toc-text">配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#创建Repository"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">创建Repository</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置-Github的-SSH-Key"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">配置 Github的 SSH Key</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-bash内测试"><span class="toc-number">1.2.1.</span> <span class="toc-text">git bash内测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Hexo"><span class="toc-number">1.2.2.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#启动项目服务"><span class="toc-number">1.2.3.</span> <span class="toc-text">启动项目服务</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本地启动流程："><span class="toc-number">1.2.3.0.1.</span> <span class="toc-text">本地启动流程：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#创建新的blog："><span class="toc-number">1.2.3.0.2.</span> <span class="toc-text">创建新的blog：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#生成静态网页："><span class="toc-number">1.2.3.0.3.</span> <span class="toc-text">生成静态网页：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#部署Blog至GitHub"><span class="toc-number">1.2.3.0.4.</span> <span class="toc-text">部署Blog至GitHub</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#报错处理"><span class="toc-number">1.2.4.</span> <span class="toc-text">报错处理</span></a></li></ol></li></ol></li></ol>
 		</div>
 		
@@ -98,7 +98,7 @@
 <p>切换淘宝源</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nrm use taobao</div></pre></td></tr></table></figure>
 <p>这样就表示成功了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Registry has been set to: http://registry.npm.taobao.org/</div></pre></td></tr></table></figure></p>
-<p><strong><a href="https://git-scm.com/downloads" target="_blank" rel="external">Git</a>安装</strong></p>
+<p><strong><a href="https://git-scm.com/downloads" target="_blank" rel="external">Git</a> 安装</strong></p>
 <p>可以参考这个教程<br><a href="http://www.runoob.com/git/git-install-setup.html" target="_blank" rel="external">http://www.runoob.com/git/git-install-setup.html</a></p>
 <h4 id="废话一些"><a href="#废话一些" class="headerlink" title="废话一些"></a>废话一些</h4><p>安装的过程中参考了很多前人的经验。不过因为一个人出现的问题总归只有那么几个，所以我在配置的过程中也出现了一些现有教程中找了半天也没有解决方案的问题。最后在搜索引擎的帮助下，还是找到了相关的内容，最后得以解决。</p>
 <h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><h5 id="创建Repository"><a href="#创建Repository" class="headerlink" title="创建Repository"></a>创建Repository</h5><p>首先需要在GitHub上创建一个Repository</p>
@@ -114,8 +114,7 @@
 <p>2.检查本机是否有设置SSH Key</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd ~/.ssh</div><div class="line">$ ls</div></pre></td></tr></table></figure>
 <p>成功进入ssh目录后，检查目录下文件</p>
-<p>如下图所示，如果有对应的SSH Key请跳过以下步骤</p>
-<p>【3.生成新的SSH Key】</p>
+<p>如下图所示，如果有对应的SSH Key请跳过以下步骤【3.生成新的SSH Key】</p>
 <p><img src="../../images/checksshkey.jpg" alt="image"></p>
 <p>3.生成新的SSH Key</p>
 <p>git bash内输入命令</p>
@@ -167,6 +166,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ hexo -v</div><div class="line">hexo: 3.2.2</div><div class="line">hexo-cli: 1.0.2</div><div class="line">os: Windows_NT 6.1.7601 win32 x64</div><div class="line">http_parser: 2.7.0</div><div class="line">node: 6.10.0</div><div class="line">v8: 5.1.281.93</div><div class="line">uv: 1.9.1</div><div class="line">zlib: 1.2.8</div><div class="line">ares: 1.10.1-DEV</div><div class="line">icu: 58.2</div><div class="line">modules: 48</div><div class="line">openssl: 1.0.2k</div></pre></td></tr></table></figure>
 <p>Hexo 更新到3.0之后，deploy的type 的github需要改成git</p>
 <p>如果查看版本之后，发现其版本不是3以上，可以通过以下的命令操作进行处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">rm -rf node_modules</div><div class="line">npm update</div></pre></td></tr></table></figure>
+<p>具体内容可参考此文章内容</p>
+<p><a href="http://qiruotong.me/2015/12/01/hexo-deploy/" target="_blank" rel="external">Hexo出现Error deployer not found:github 的错误</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -183,42 +185,21 @@
 </footer>   	       
 	</article>
 	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/2017/03/13/First-Blog/" title="First Blog">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  First Blog</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/2017/03/07/hello-world/"  title="Hello World">
- <strong>NEXT:</strong><br/> 
- <span>Hello World
-</span>
-</a>
-</div>
-
-</nav>
-
 	
 <section class="comment">
 	<div class="ds-thread"></div>
 </section>
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo的配置（windows）"><span class="toc-number">1.</span> <span class="toc-text">Hexo的配置（windows）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备"><span class="toc-number">1.1.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用nrm快速切换NPM源"><span class="toc-number">1.1.1.</span> <span class="toc-text">使用nrm快速切换NPM源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#废话一些"><span class="toc-number">1.1.2.</span> <span class="toc-text">废话一些</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置环境"><span class="toc-number">1.2.</span> <span class="toc-text">配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#创建Repository"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">创建Repository</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置-Github的-SSH-Key"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">配置 Github的 SSH Key</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#git-bash内测试"><span class="toc-number">1.2.1.</span> <span class="toc-text">git bash内测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Hexo"><span class="toc-number">1.2.2.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#启动项目服务"><span class="toc-number">1.2.3.</span> <span class="toc-text">启动项目服务</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#本地启动流程："><span class="toc-number">1.2.3.0.1.</span> <span class="toc-text">本地启动流程：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#创建新的blog："><span class="toc-number">1.2.3.0.2.</span> <span class="toc-text">创建新的blog：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#生成静态网页："><span class="toc-number">1.2.3.0.3.</span> <span class="toc-text">生成静态网页：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#部署Blog至GitHub"><span class="toc-number">1.2.3.0.4.</span> <span class="toc-text">部署Blog至GitHub</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#报错处理"><span class="toc-number">1.2.4.</span> <span class="toc-text">报错处理</span></a></li></ol></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
@@ -226,7 +207,7 @@
   
 
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
